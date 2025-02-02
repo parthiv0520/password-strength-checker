@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('back.jpeg') no-repeat center center fixed; 
+    background-size: cover; /* Ensures the image covers the entire screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+    transition: background-image 2s ease-in-out;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+.strength-container {
+    margin-top: 20px;
+    position: relative;
+}
+
+#strength-bar {
+    width: 0%;
+    height: 5px;
+    background: #ff0000;
+    transition: width 0.5s ease;
+}
+
+#feedback p {
+    color: red;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+#feedback p.valid {
+    color: green;
+}
